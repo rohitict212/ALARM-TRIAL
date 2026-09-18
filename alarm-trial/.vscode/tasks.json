@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Push alarm app to GitHub",
+			"type": "shell",
+			"command": "git init && git add index.html script.js style.css README.md && git commit -m \"Initial alarm app\" && git branch -M main && git remote add origin https://github.com/rohitict212/ALARM-TRIAL.git && git push -u origin main",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

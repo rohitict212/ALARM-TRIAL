@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Alarm App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <p class="eyebrow">Trial app</p>
+        <h1>Morning Alarm</h1>
+      </header>
+
+      <div class="clock-panel">
+        <div class="label">Current time</div>
+        <div id="current-time">--:--:--</div>
+      </div>
+
+      <div class="form-panel">
+        <label for="alarm-time">Set Alarm Time</label>
+        <input id="alarm-time" type="time" />
+
+        <label for="tone-select">Choose ringtone</label>
+        <select id="tone-select">
+          <option value="classic">Classic Beep</option>
+          <option value="soft">Soft Tone</option>
+          <option value="sharp">Sharp Tone</option>
+        </select>
+
+        <label for="snooze-select">Snooze duration</label>
+        <select id="snooze-select">
+          <option value="10">10 seconds</option>
+          <option value="20">20 seconds</option>
+          <option value="30" selected>30 seconds</option>
+          <option value="60">60 seconds</option>
+        </select>
+
+        <div class="buttons">
+          <button id="set-alarm">Set Alarm</button>
+          <button id="snooze-alarm" class="secondary">Snooze</button>
+          <button id="clear-alarm" class="secondary danger">Clear</button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button id="theme-toggle" class="secondary">Switch Theme</button>
+      </div>
+
+      <div id="status" class="status idle">No alarm set</div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
